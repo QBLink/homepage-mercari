@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>homepage_mercari</title>
+    <link rel="stylesheet" type="text/css" href="homepage_mercari.css" />
+</head>
+
+<body>
+    <header id="header">
+        <div id="start">
+            <div id="logoAndSearch">
+                <div id="logo">
+                    <a href="https://www.mercari.com/jp/">
+                        <img src="https://web-jp-assets.mercdn.net/_next/static/images/logo-acdd90ac4f472d5a6f7a330d33ab1225.svg" alt="Mercari" id="logoImg">
+                    </a>
+                </div>
+                <!--検索フォーム: form, input + botton-->
+                <form id="searchKeyword" action="https://www.mercari.com/jp/search/">
+                    <input id="inputBox" placeholder="何かお探しですか?">
+                    <button id="searchBtn" type="submit">
+                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="svgSearchKeyword">
+                            <path fill="currentColor" fill-rule="nonzero" d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117z"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div id="searchMenu">
+                <div id="cateGory">
+                    <a id="cateGoryKara" href="https://www.mercari.com/jp/category/">
+                        <svg aria-hidden="true" width="20" height="16" viewBox="0 0 20 16" class="svgCateGory">
+                            <path fill="currentColor" fill-rule="nonzero" d="M18.799 15.25h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zm0-6h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zm0-6h-11.5a1.25 1.25 0 1 1 0-2.5h11.5a1.25 1.25 0 0 1 0 2.5zM2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                        </svg>カテゴリーから探す
+                    </a>
+                    <ul id="cateGoryList">
+                        <!--一部のカテゴリリストを作った-->
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/1">レディース</a>
+                            <ul class="cclist">
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/11">トップス</a>
+                                    <ul class="ccclist" id="c11list">
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/119">Tシャツ/カットソー(半袖/袖なし)</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/120">Tシャツ/カットソー(七分/長袖)</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/121">シャツ/ブラウス(半袖/袖なし)</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/122">シャツ/ブラウス(七分/長袖)</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/123">ポロシャツ</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/124">キャミソール</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/125">タンクトップ</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/126">ホルターネック</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/127">ニット/セーター</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/128">チュニック</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/129">カーディガン/ボレロ</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/130">アンサンブル</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/131">ベスト/ジレ</a>
+                                        </li>
+                                        <li class="ccc">
+                                            <a href="https://www.mercari.com/jp/category/132">パーカー</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/12">アウター</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/13">パンツ</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/14">スカート</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/15">ワンピース</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/16">靴</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/17">ルームウェア/パジャマ</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/18">レッグウェア</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/19">帽子</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/20">アクセサリー</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/21">ヘアアクセサリー</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/22">小物</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/23">時計</a>
+                                </li>
+                                <li class="cc">
+                                    <a href="https://www.mercari.com/jp/category/13">パンツ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/2">メンズ</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/4">インテリア・住まい・小物</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/5">本・音楽・ゲーム</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/1328">おもちゃ・ホビー・グッズ</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/6">コスメ・香水・美容</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/7">家電・スマホ・カメラ</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/8">スポーツ・レジャー</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/9">ハンドメイド</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/1027">チケット</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/1318">自動車・オートバイ</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/10">その他</a>
+                        </li>
+                        <li class="c">
+                            <a class="c1" href="https://www.mercari.com/jp/category/">カテゴリー一覧</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="brand">
+                    <a id="brandKara" href="https://www.mercari.com/jp/brand/">
+                        <svg aria-hidden="true" width="23" height="16" viewBox="0 0 23 16" class="svgBrand">
+                            <path fill="currentColor" fill-rule="nonzero" d="M6.315 0L4.473 1.806 2.833.019.73 1.977l1.69 1.84L1.198 5.02c-1.594 1.594-1.594 4.188-.01 5.772L6.3 16h13.272a3.08 3.08 0 0 0 3.077-3.077V3.076A3.08 3.08 0 0 0 19.57 0H6.315zm13.46 12.925a.211.211 0 0 1-.205.205H7.504L3.227 8.771a1.226 1.226 0 0 1-.01-1.71L4.38 5.92l1.28 1.371a2.68 2.68 0 1 0 2.13-1.93L6.433 3.907 7.49 2.87h12.082a.211.211 0 0 1 .206.205v9.848h-.002z"></path>
+                        </svg>ブランドから探す
+                    </a>
+                    <ul id="brandList">
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/658/">シャネル</a>
+                        </li>
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/857/">ナイキ</a>
+                        </li>
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/1326/">ルイ ヴィトン</a>
+                        </li>
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/1620/">シュプリーム</a>
+                        </li>
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/99/">アディダス</a>
+                        </li>
+                        <li class="b">
+                            <a href="https://www.mercari.com/jp/brand/">ブランド一覧</a>
+                        </li>
+                    </ul>
+
+                    </ul>
+                </div>
+                <div id="sign">
+                    <div id="signUp">
+                        <a href="https://www.mercari.com/jp/signup/">新規会員登録</a>
+                    </div>
+                    <div id="signIn">
+                        <a href="https://www.mercari.com/jp/login/?login_callback=%2Fjp%2F">ログイン</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="banner">
+        <a href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjss2IZLi1IjbZED7vgX6aYTCf1Jt-t7r_i9FZV4zLgj0TSQ2knQCsWQLcn29DhqU0zotsxTV9mCLUeA-IalYfR10TjD8VhoGLJI-A_WMDANtK-X-RFOyowEvmt6SIYXeAAbZiTZeGRsum1UtK7h3X2qsOWiFoiaZSQjNKzdznZ1Zw9xYP3Hu_ROPKoYXsghVDAdTH9MKVRjokyuD5T1YA7ThBVQeCApIvnoRj-8N2S3V_IXkcmcfwp7krSKoE58U42W8l3Cy&sai=AMfl-YTzJxSVuVYi--8BvfnZ0U7Y-oLmMqZaB4zuAIisd07lsH8-1QFPiCJ-OYDBOsXvF0PaCLkM5kzrOopyrzeRGXL2ZWC-d9JL8Dc9wXWFKkZ9mhw5rrOAd0i_1rt7723o_0GswcAUvQ&sig=Cg0ArKJSzF4oF_dltJaGEAE&urlfix=1&adurl=https://jp-news.mercari.com/2020/09/01/docomocpn/"></a>
+    </div>
+    <div id="popularCategory">
+        <div id="popularTitle">
+            <p>人気のカテゴリー</p>
+        </div>
+        <div id="popularTag">
+            <a class="pTag">レディース</a>
+            <a class="pTag">メンズ</a>
+            <a class="pTag">家電・スマホ・カメラ</a>
+            <a class="pTag">おもちゃ・ホビー・グッズ</a>
+        </div>
+    </div>
+    <div id="itemByCategory">
+        <div class="area" id="ladies">
+            <div class="h3title" id="ladiesItemTitle">
+                <p>レディース新着アイテム</p>
+                <a href="https://www.mercari.com/jp/category/1/">もっと見る
+                    <svg width="16" height="16" fill="#0095ee" fill-rule="evenodd" viewBox="0 0 24 24" aria-hidden="true" class="svgmiru">
+                        <path d="M9,19a.7.7,0,0,1-.49-.2.69.69,0,0,1,0-1l5.62-5.63a.28.28,0,0,0,.09-.21.27.27,0,0,0-.09-.2L8.6,6.19a.7.7,0,1,1,1-1l5.58,5.58A1.71,1.71,0,0,1,15.66,12a1.73,1.73,0,0,1-.49,1.2L9.54,18.8A.74.74,0,0,1,9,19Z"></path>
+                    </svg> 
+                </a>
+            </div>
+            <ul id="ladiesItem" class="itemList">
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m86156708411/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m86156708411_1.jpg?1599722083" alt="eimy istoire Limited ES pattern scarf">
+                                    <span class="price" aria-label="Price">¥24,000</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>eimy istoire Limited ES pattern scarf</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m82141640135/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m82141640135_1.jpg?1599722083" alt="ミッキーのリュック">
+                                    <span class="price" aria-label="Price">¥800</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>ミッキーのリュック</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m69696698529/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m69696698529_1.jpg?1599309948" alt="花嫁のウェディングトーストドレスディナーパーティーウェディングドレス">
+                                    <span class="price" aria-label="Price">¥6,964</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>花嫁のウェディングトーストドレスディナーパーティーウェディングドレス</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m59896667816/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m59896667816_1.jpg?1598447722" alt=" L 胸つぶし タンクトップ さらし ナベシャツ ブラック ホワイ43良い物 ">
+                                    <span class="price " aria-label="Price ">¥2,300</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>L 胸つぶし タンクトップ さらし ナベシャツ ブラック ホワイ43良い物</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m56835286408/ " class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m56835286408_1.jpg?1598932468" alt="moussy 今季完売tシャツ ">
+                                    <span class="price " aria-label="Price ">¥2,900</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>moussy 今季完売tシャツ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m32777514901/ " class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m32777514901_1.jpg?1599722083" alt="菌はレースのドレス脂肪mmの大型サイズの女性の半袖シャツと長いセクシ">
+                                    <span class="price " aria-label="Price ">¥4,300</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>菌はレースのドレス脂肪mmの大型サイズの女性の半袖シャツと長いセクシ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m21720253217/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m21720253217_1.jpg?1599028354" alt="欧米マキシマーメイドデニムスカート二段フレア エレガントロングマーメイドスカート">
+                                    <span class="price " aria-label="Price ">¥6,500</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>欧米マキシマーメイドデニムスカート二段フレア エレガントロングマーメイドスカート</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m16486420877/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m16486420877_1.jpg?1599722083" alt="シルクふぁみりぃ　綿　絹　先丸靴下　シルクファミリー　冷えとり　重ねばき">
+                                    <span class="price " aria-label="Price ">¥650</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>シルクふぁみりぃ　綿　絹　先丸靴下　シルクファミリー　冷えとり　重ねばき</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m97501492368/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m97501492368_1.jpg?1597382080" alt="シャツワンピースシャツワンピ レディース ストライプ柄長袖 スリム シャツ">
+                                    <span class="price " aria-label="Price ">¥4,480</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>シャツワンピースシャツワンピ レディース ストライプ柄長袖 スリム シャツ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m93340673126/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m93340673126_1.jpg?1598070070" alt="ワンピースひざ下丈フレアシンプル セクシー きれいめノースリーブクロスレディース">
+                                    <span class="price " aria-label="Price ">¥800</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ワンピースひざ下丈フレアシンプル セクシー きれいめノースリーブクロスレディース</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area" id="mens">
+            <div class="h3title" id="mensItemTitle">
+                <p>メンズ新着アイテム</p>
+                <a href="https://www.mercari.com/jp/category/2/">もっと見る
+                    <svg width="16" height="16" fill="#0095ee" fill-rule="evenodd" viewBox="0 0 24 24" aria-hidden="true" class="svgmiru">
+                        <path d="M9,19a.7.7,0,0,1-.49-.2.69.69,0,0,1,0-1l5.62-5.63a.28.28,0,0,0,.09-.21.27.27,0,0,0-.09-.2L8.6,6.19a.7.7,0,1,1,1-1l5.58,5.58A1.71,1.71,0,0,1,15.66,12a1.73,1.73,0,0,1-.49,1.2L9.54,18.8A.74.74,0,0,1,9,19Z"></path>
+                    </svg> 
+                </a>
+            </div>
+            <ul id="mensItem" class="itemList">
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m98489112027/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m98489112027_1.jpg?1597622613" alt="X-LARGE　エクストララージ　マルチカラーチェックシャツ　サイズL">
+                                    <span class="price" aria-label="Price">¥2,680</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>X-LARGE　エクストララージ　マルチカラーチェックシャツ　サイズL</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m85754834866/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m85754834866_1.jpg?1598720834" alt="APPLE WATCH SERIES 3  42mm GPSモデル">
+                                    <span class="price" aria-label="Price">¥25,000</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>APPLE WATCH SERIES 3  42mm GPSモデル</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m83809120616/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m83809120616_1.jpg?1599662988" alt="カルバンクライン　ビックロゴTシャツ　Tシャツ　白Tシャツ">
+                                    <span class="price" aria-label="Price">¥3,580</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>カルバンクライン　ビックロゴTシャツ　Tシャツ　白Tシャツ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m78656401679/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m78656401679_1.jpg?1574665670" alt="【正規品】STUSSY マウンテンパーカー 紫">
+                                    <span class="price " aria-label="Price ">¥3,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>【正規品】STUSSY マウンテンパーカー 紫</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m72583927108/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m72583927108_1.jpg?1592812422" alt="腕時計 メンズ 稼働品">
+                                    <span class="price " aria-label="Price ">¥600</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>腕時計 メンズ 稼働品</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m66111881933/ " class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m66111881933_1.jpg?1599807523" alt="無印良品　撥水ミニウエストポーチ　黒">
+                                    <span class="price " aria-label="Price ">¥990</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>無印良品　撥水ミニウエストポーチ　黒</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m27994528036/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m27994528036_1.jpg?1599690084" alt="NIKE エアフォース1 黒28.0">
+                                    <span class="price " aria-label="Price ">¥8,500</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>NIKE エアフォース1 黒28.0</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m25895326688/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m25895326688_1.jpg?1599806858" alt="ジッポ　zippo 20個  zippoロゴ入りケース付">
+                                    <span class="price " aria-label="Price ">¥28,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ジッポ　zippo 20個  zippoロゴ入りケース付</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m20010624958/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m20010624958_1.jpg?1598101896" alt="ZARA シャツ">
+                                    <span class="price " aria-label="Price ">¥4,190</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ZARA シャツ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m88702991040/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m88702991040_1.jpg?1599807522" alt="男性半袖Tシャツ純綿ゆったり丸首半袖白T夏メンズビッグサイズTシャツファッション">
+                                    <span class="price " aria-label="Price ">¥6,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>男性半袖Tシャツ純綿ゆったり丸首半袖白T夏メンズビッグサイズTシャツファッション</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="popularBrand">
+        <div id="brandTitle">
+            <p>人気のブランド</p>
+        </div>
+        <div id="brandTag">
+            <a class="pTag">シャネル</a>
+            <a class="pTag">ルイヴィトン</a>
+            <a class="pTag">シュプリーム</a>
+            <a class="pTag">ナイキ</a>
+        </div>
+    </div>
+    <div id="itemByBrand">
+        <div class="area" id="shaell">
+            <div class="h3title" id="ladiesItemTitle">
+                <p>シャネル新着アイテム</p>
+                <a href="https://www.mercari.com/jp/brand/658/">もっと見る
+                    <svg width="16" height="16" fill="#0095ee" fill-rule="evenodd" viewBox="0 0 24 24" aria-hidden="true" class="svgmiru">
+                        <path d="M9,19a.7.7,0,0,1-.49-.2.69.69,0,0,1,0-1l5.62-5.63a.28.28,0,0,0,.09-.21.27.27,0,0,0-.09-.2L8.6,6.19a.7.7,0,1,1,1-1l5.58,5.58A1.71,1.71,0,0,1,15.66,12a1.73,1.73,0,0,1-.49,1.2L9.54,18.8A.74.74,0,0,1,9,19Z"></path>
+                    </svg> 
+                </a>
+            </div>
+            <ul id="ladiesItem" class="itemList">
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m55059171503/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m55059171503_1.jpg?1597487263" alt="シャネル チャンス オー タンドゥル オードゥ トワレット 50mI">
+                                    <span class="price" aria-label="Price">¥2,800</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>シャネル チャンス オー タンドゥル オードゥ トワレット 50mI</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m74825735301/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m74825735301_1.jpg?1593860218" alt="【極美品 激レア】シャネル　コココクーン ワンショルダーバッグ スモール">
+                                    <span class="price" aria-label="Price">¥89,700</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>【極美品 激レア】シャネル　コココクーン ワンショルダーバッグ スモール</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m61773902292/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m61773902292_1.jpg?1599831791" alt="新品　CHANEL バッグ　レインカバー">
+                                    <span class="price" aria-label="Price">¥65,900</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>新品　CHANEL バッグ　レインカバー</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m29982965277/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m29982965277_1.jpg?1598988564" alt="【レア★稼働品】CHANEL シャネル ブラック　腕時計　レディース　ホワイト">
+                                    <span class="price " aria-label="Price ">¥45,600</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>【レア★稼働品】CHANEL シャネル ブラック　腕時計　レディース　ホワイト</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m87140503883/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m87140503883_1.jpg?1599831788" alt="シャネルレベージュボームアレーヴル　ミディアム　口紅 リップスティック">
+                                    <span class="price " aria-label="Price ">¥2,600</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>シャネルレベージュボームアレーヴル　ミディアム　口紅 リップスティック</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m48429192062/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m48429192062_1.jpg?1599831781" alt="【CHANEL シャネル】ココボタン 長財布 ベージュ">
+                                    <span class="price " aria-label="Price ">¥19,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>【CHANEL シャネル】ココボタン 長財布 ベージュ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m52366609565/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m52366609565_1.jpg?1597894299" alt="即日発送❗【美品】CHANEL シャネル サングラス">
+                                    <span class="price " aria-label="Price ">¥29,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>即日発送❗【美品】CHANEL シャネル サングラス</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m82097161183/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m82097161183_1.jpg?1595673652" alt="美品、ショルダーバッグ、ミニポシェット">
+                                    <span class="price " aria-label="Price ">¥214,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>美品、ショルダーバッグ、ミニポシェット</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m58143514781/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m58143514781_1.jpg?1599832058" alt="✨ 【新品未使用】✨CHANEL チャンス 香水 サンプル【1.5ml】">
+                                    <span class="price " aria-label="Price ">¥1,555</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>✨ 【新品未使用】✨CHANEL チャンス 香水 サンプル【1.5ml】</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m71184794090/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m71184794090_1.jpg?1598168117" alt="CHANEL シャネル">
+                                    <span class="price " aria-label="Price ">¥1,750</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>CHANEL シャネル</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area" id="ruiwied">
+            <div class="h3title" id="mensItemTitle">
+                <p>ルイヴィトン新着アイテム</p>
+                <a href="https://www.mercari.com/jp/brand/1326/">もっと見る
+                    <svg width="16" height="16" fill="#0095ee" fill-rule="evenodd" viewBox="0 0 24 24" aria-hidden="true" class="svgmiru">
+                        <path d="M9,19a.7.7,0,0,1-.49-.2.69.69,0,0,1,0-1l5.62-5.63a.28.28,0,0,0,.09-.21.27.27,0,0,0-.09-.2L8.6,6.19a.7.7,0,1,1,1-1l5.58,5.58A1.71,1.71,0,0,1,15.66,12a1.73,1.73,0,0,1-.49,1.2L9.54,18.8A.74.74,0,0,1,9,19Z"></path>
+                    </svg> 
+                </a>
+            </div>
+            <ul id="ruiItem" class="itemList">
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m43181417012/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m43181417012_1.jpg?1599658092" alt="☆最終値下げ！【極美品】 ルイヴィトン モノグラム クレマンス 長財布">
+                                    <span class="price" aria-label="Price">¥45,600</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>☆最終値下げ！【極美品】 ルイヴィトン モノグラム クレマンス 長財布</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m92418503253/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m92418503253_1.jpg?1599832145" alt="ルイヴィトン モノグラム バケツ">
+                                    <span class="price" aria-label="Price">¥30,000</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>ルイヴィトン モノグラム バケツ</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m67305399927/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m67305399927_1.jpg?1599228356" alt="【美品】ルイヴィトン アンプラント オロール ジッピーウォレット 長財布">
+                                    <span class="price" aria-label="Price">¥40,000</span>
+                                </div>
+                                <figcaption class="caption">
+                                    <span>【美品】ルイヴィトン アンプラント オロール ジッピーウォレット 長財布</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="itemBox">
+                        <a href="https://www.mercari.com/jp/items/m63011160981/" class="itemPictureLink">
+                            <figure class="itemPictureFigure">
+                                <div class="itemPicture">
+                                    <img src="https://static.mercdn.net/thumb/photos/m63011160981_1.jpg?1599383149" alt="ルイヴィトン キーケース モノグラム">
+                                    <span class="price " aria-label="Price ">¥23,700</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ルイヴィトン キーケース モノグラム</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m90482749170/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m90482749170_1.jpg?1599228404" alt="【極美品】 ルイヴィトン ダミエ アズール ジッピーウォレット 長財布">
+                                    <span class="price " aria-label="Price ">¥46,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>【極美品】 ルイヴィトン ダミエ アズール ジッピーウォレット 長財布</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m88771293144/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m88771293144_1.jpg?1599566820" alt="ルイヴィトン　長財布">
+                                    <span class="price " aria-label="Price ">¥5,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ルイヴィトン　長財布</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m21059549527/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m21059549527_1.jpg?1599305021" alt="ルイヴィトン 長財布 ポルトフォイユ スイートモノグラム">
+                                    <span class="price " aria-label="Price ">¥48,800</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>ルイヴィトン 長財布 ポルトフォイユ スイートモノグラム</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m15078196741/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m15078196741_1.jpg?1599430977" alt="LOUIS VUITTON モノグラム  オープンバックパンプス　ルイヴィトン">
+                                    <span class="price " aria-label="Price ">¥17,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>LOUIS VUITTON モノグラム  オープンバックパンプス　ルイヴィトン</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m86496534776/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m86496534776_1.jpg?1599832106" alt="Louis Vuitton(ルイヴィトン) NIGO バックパック　リュック">
+                                    <span class="price " aria-label="Price ">¥335,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>Louis Vuitton(ルイヴィトン) NIGO バックパック　リュック</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+                <li class="item ">
+                    <div class="itemBox ">
+                        <a href="https://www.mercari.com/jp/items/m64736828110/" class="itemPictureLink ">
+                            <figure class="itemPictureFigure ">
+                                <div class="itemPicture ">
+                                    <img src="https://static.mercdn.net/thumb/photos/m64736828110_1.jpg?1599832085" alt="極美品　ルイヴィトン アンプラント マリーヌルージュ　ジッピー">
+                                    <span class="price " aria-label="Price ">¥80,000</span>
+                                </div>
+                                <figcaption class="caption ">
+                                    <span>極美品　ルイヴィトン アンプラント マリーヌルージュ　ジッピー</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="bottom">
+        <aside id="mobileApp">
+            <div id="mobile">
+                <div id="mobileleft">
+                    <div id="one">スマホでかんたんフリマアプリ</div>
+                    <div id="two">今すぐ無料ダウンロード！</div>
+                    <div id="appLogo">
+                        <img src="https://web-jp-assets.mercdn.net/_next/static/images/mercari_icon-f75780e32e41e052c8aaa8b446331cd8.png" alt="" id="app">
+                        <a href="https://itunes.apple.com/jp/app/id667861049?l=ja&amp;mt=8" target="_blank">
+                            <img src="https://web-jp-assets.mercdn.net/_next/static/images/app-store-a5c17948c6fd6d5b60b13d421cd60b35.svg" alt="" id="appStore">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.kouzoh.mercari&amp;hl=ja" target="_blank">
+                            <img src="https://web-jp-assets.mercdn.net/_next/static/images/google-play-495575abb895b405aa6336b2a4304958.svg" alt="" id="googleStore">
+                        </a>
+                    </div>
+                </div>
+                <figure id="mobileRight">
+                    <img src="https://web-jp-assets.mercdn.net/_next/static/images/download_app_pc-a4418175e8be071827ac88d073f40e4a.png" alt="">
+                </figure>
+            </div>
+        </aside>
+        <footer id="info">
+            <nav id="infonav">
+                <div id="company" class="infoList">
+                    <p>メルカリについて</p>
+                    <ul class="footerList">
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://about.mercari.com/">会社概要（運営会社）</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/jobs/">採用情報</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://about.mercari.com/press/news/">プレスリリース</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://jp-news.mercari.com/">公式ブログ</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/logo-guidelines/">メルカリロゴ利用ガイドライン</a>
+                        </li>
+                        <a class="smallLogo" href="https://twitter.com/mercari_jp">
+                            <svg aria-hidden="true" width="21" height="16" viewBox="0 0 21 16" class="svgSmallLogo">
+                                <path fill="currentColor" d="M6.343 15.969c7.61 0 11.773-6.134 11.773-11.444 0-.172 0-.345-.008-.517a8.303 8.303 0 0 0 2.066-2.086 8.576 8.576 0 0 1-2.38.635A4.07 4.07 0 0 0 19.616.329a8.377 8.377 0 0 1-2.63.973 4.186 4.186 0 0 0-3.019-1.27c-2.283 0-4.14 1.803-4.14 4.023 0 .314.041.62.106.918A11.866 11.866 0 0 1 1.404.769a3.936 3.936 0 0 0-.557 2.023c0 1.396.735 2.628 1.84 3.35a4.278 4.278 0 0 1-1.872-.503v.055c0 1.945 1.428 3.577 3.317 3.945-.347.094-.71.141-1.09.141-.266 0-.524-.023-.774-.07.524 1.6 2.057 2.76 3.865 2.792a8.452 8.452 0 0 1-5.14 1.725 8.19 8.19 0 0 1-.985-.054 12.02 12.02 0 0 0 6.335 1.796" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="smallLogo" href="https://www.facebook.com/mercarijp">
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" class="svgSmallLogo" id="faceBook">
+                                <path fill="currentColor" d="M15.111 0H.89A.889.889 0 0 0 0 .889V15.11c0 .491.398.889.889.889h7.658V9.813H6.469V7.391h2.078V5.613c0-2.066 1.262-3.193 3.11-3.193.623-.002 1.244.03 1.863.096v2.15h-1.276c-1.002 0-1.197.478-1.197 1.178v1.543h2.397l-.31 2.422h-2.087V16h4.064c.491 0 .889-.398.889-.889V.89A.889.889 0 0 0 15.111 0z" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </ul>
+                </div>
+                <div id="help" class="infoList">
+                    <p>ヘルプと各種情報</p>
+                    <ul class="footerList">
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/help_center/">メルカリガイド</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/rakuraku-mercari/">らくらくメルカリ便</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/yuyu-mercari/">ゆうゆうメルカリ便</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/tanomeru/">梱包・発送たのメル便</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/guide/car/">車体取引ガイド</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/safe/description/">メルカリあんしん・あんぜん宣言！</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/authenticity/">偽ブランド品撲滅への取り組み</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/box/">メルカリボックス</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/ranking/">本・漫画のランキング</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="kiyaku">
+                    <div id="kiyaku1" class="infoList">
+                        <p>プライバシーと利用規約</p>
+                        <ul class="footerList">
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/privacy/">プライバシーポリシー</a>
+                            </li>
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/tos/">メルカリ利用規約</a>
+                            </li>
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/compliance/">コンプライアンスポリシー</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="kiyaku2" class="infoList">
+                        <ul class="footerList">
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/c/">個人データの安全管理に係る基本方針</a>
+                            </li>
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/tos/">メルカリ利用規約</a>
+                            </li>
+                            <li class="footerItem">
+                                <a class="footerLink" href="https://www.mercari.com/jp/compliance/">コンプライアンスポリシー</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="country" class="infoList">
+                    <p>国</p>
+                    <ul class="footerList">
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/jp/">日本</a>
+                        </li>
+                        <li class="footerItem">
+                            <a class="footerLink" href="https://www.mercari.com/">United States</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <div id="floatButton">
+        <div id="floatContent">
+            <a href="https://www.mercari.com/jp/sell">
+                <p>出品</p>
+                <svg aria-hidden="true" width="18" height="16" viewBox="0 0 18 16" id="svgFloatButton">
+                <path fill="currentColor" fill-rule="nonzero" d="M6.3 0L4.653 1.778H1.8c-.99 0-1.8.8-1.8 1.778v10.666C0 15.2.81 16 1.8 16h14.4c.99 0 1.8-.8 1.8-1.778V3.556c0-.978-.81-1.778-1.8-1.778h-2.853L11.7 0H6.3zM9 13.333c-2.484 0-4.5-1.99-4.5-4.444 0-2.453 2.016-4.445 4.5-4.445s4.5 1.992 4.5 4.445c0 2.453-2.016 4.444-4.5 4.444zm0-1.6c1.59 0 2.88-1.273 2.88-2.844S10.59 6.044 9 6.044c-1.59 0-2.88 1.274-2.88 2.845 0 1.57 1.29 2.844 2.88 2.844z"></path>
+            </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

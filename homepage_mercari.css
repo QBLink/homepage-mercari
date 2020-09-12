@@ -1,0 +1,598 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: Arial, YuGothic, Meiryo, sans-serif;
+}
+
+#header {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    height: 100px;
+    position: relative;
+    z-index: 3;
+    display: block;
+}
+
+#start {
+    width: 1020px;
+    height: 100px;
+    margin: auto;
+    padding: 8px 0px 0px;
+    /* [上][左右][下]のパディング */
+}
+
+#logoAndSearch {
+    display: flex;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 3px;
+}
+
+#logoImg {
+    display: inline-block;
+    width: 134px;
+    height: 36px;
+    margin-right: 45px;
+}
+
+#searchKeyword {
+    border-radius: 4px;
+    display: flex;
+    background: rgb(245, 245, 245);
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0px 0px 0px 10px;
+    width: 841px;
+    height: 40px;
+}
+
+#inputBox {
+    display: inline-block;
+    background: rgb(245, 245, 245);
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    font-family: inherit;
+}
+
+#searchBtn {
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.svgSearchKeyword {
+    color: rgb(34, 34, 34);
+    height: 14px;
+    width: 14px;
+}
+
+#searchMenu {
+    display: flex;
+    line-height: 36px;
+    width: 1020px;
+    height: 44px;
+    margin-top: 8px;
+}
+
+#cateGory {
+    line-height: 36px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.svgCateGory {
+    color: rgb(234, 53, 45);
+    height: 12px;
+    margin-right: 4px;
+}
+
+#cateGoryList {
+    list-style: none;
+    font-size: 14px;
+    line-height: 44px;
+    display: none;
+    cursor: pointer;
+    width: 224px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+}
+
+#cateGoryKara {
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#cateGoryKara:hover {
+    color: rgb(0, 149, 238);
+}
+
+#cateGory:hover #cateGoryList {
+    /* ドロップダウンメニュー: マウスオーバーで表示する */
+    display: block;
+}
+
+.c {
+    overflow: hidden;
+    padding: 0px 16px;
+}
+
+.c a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+
+.c:hover {
+    background-color: rgb(234, 53, 45);
+}
+
+.c:hover .c1 {
+    color: rgb(239, 239, 239);
+}
+
+.c:hover .cclist {
+    display: block;
+    position: absolute;
+}
+
+.cc {
+    list-style: none;
+    color: rgb(34, 34, 34);
+    padding: 8px 16px;
+    line-height: 14px;
+}
+
+.cc a {
+    text-decoration: none;
+}
+
+.cc:hover {
+    background-color: rgb(239, 239, 239);
+}
+
+.cc:hover .ccclist {
+    display: block;
+    position: absolute;
+}
+
+.cclist {
+    display: none;
+    width: 224px;
+    left: 224px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background: rgb(255, 255, 255);
+}
+
+.ccc {
+    list-style: none;
+    color: rgb(34, 34, 34);
+    padding: 8px 16px;
+    line-height: 14px;
+}
+
+.ccc a {
+    text-decoration: none;
+}
+
+.ccc:hover {
+    background-color: rgb(239, 239, 239);
+}
+
+.ccclist {
+    display: none;
+    width: 320px;
+    left: 224px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background: rgb(255, 255, 255);
+}
+
+.svgBrand {
+    color: rgb(234, 53, 45);
+    height: 12px;
+    margin-right: 4px;
+}
+
+#brandKara {
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    padding: 0px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#brandKara:hover {
+    color: rgb(0, 149, 238);
+}
+
+#brandList {
+    list-style: none;
+    font-size: 14px;
+    line-height: 44px;
+    display: none;
+    cursor: pointer;
+    width: 224px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background: rgb(255, 255, 255);
+}
+
+#brand:hover #brandList {
+    /* ドロップダウンメニュー: マウスオーバーで表示する */
+    display: block;
+}
+
+.b {
+    padding: 0px 16px;
+}
+
+.b a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+
+.b:hover {
+    background-color: rgb(234, 53, 45);
+}
+
+.b:hover a {
+    color: rgb(255, 255, 255);
+}
+
+
+/* ボタンでなく、backgroundとpaddingでそのような効果を出す */
+
+#sign {
+    text-align: right;
+    right: 250px;
+    position: absolute;
+    display: flex;
+}
+
+#signUp a {
+    background-color: rgb(234, 53, 45);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(234, 53, 45);
+    border-radius: 4px;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline;
+}
+
+#signIn {
+    margin-left: 11px;
+}
+
+#signIn a {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 149, 238);
+    font-size: 14px;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: rgb(0, 149, 238);
+    border-radius: 4px;
+}
+
+#banner a {
+    background-image: url(https://tpc.googlesyndication.com/simgad/13731983061289481324?);
+    background-position: center;
+    background-size: auto;
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+#popularCategory {
+    padding: 56px 0px 30px;
+}
+
+#popularTitle p {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#popularTag {
+    text-align: center;
+}
+
+.pTag {
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(239, 239, 239);
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+}
+
+#itemByCategory {
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 100px;
+}
+
+.area {
+    width: 1020px;
+    height: 584px;
+    margin: auto;
+    padding: 42px 0px 0px;
+}
+
+.h3title {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h3title p {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.h3title a {
+    display: inline-block;
+    font-size: 14px;
+    color: #0095ee;
+    text-decoration-line: none;
+    position: relative;
+}
+
+.h3title a:hover {
+    text-decoration-line: underline;
+}
+
+.svgmiru {
+    position: relative;
+    top: 3px;
+}
+
+.itemList {
+    list-style: none;
+}
+
+.item {
+    padding: 10px 0px;
+    width: 20%;
+    float: left;
+}
+
+.itemBox {
+    height: 252px;
+    width: 188px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: white;
+}
+
+.itemBox:hover {
+    height: 250.4px;
+    border: 1px solid #0095ee;
+}
+
+.itemPictureLink {
+    height: 252px;
+    width: 188px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.itemPicture {
+    width: 188px;
+    height: 188px;
+}
+
+.itemPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: baseline;
+}
+
+.caption {
+    height: 64px;
+    padding: 14px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    overflow: hidden;
+    display: block;
+    line-height: 1.4em;
+}
+
+.caption span {
+    overflow: hidden;
+    display: inline-block;
+    height: 2.8em;
+}
+
+.price {
+    background: rgba(0, 0, 0, .4);
+    border-radius: 0 14px 14px 0;
+    bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    z-index: 2;
+    position: relative;
+    top: -40px;
+    padding: 3px 12px;
+    display: inline-flex;
+}
+
+
+}
+#popularBrand {
+    padding: 56px 0px 30px;
+}
+#brandTitle p {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 600;
+}
+#brandTag {
+    text-align: center;
+}
+#itemByBrand {
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 100px;
+}
+#mobileApp {
+    background: url("https://web-jp-assets.mercdn.net/_next/static/images/download_app_bg-b57d6f1a32f2aebd89cf6f43bc2e4b39.jpg")repeat scroll center center / cover;
+    display: block;
+    height: 260px;
+}
+#mobile {
+    margin: auto;
+    width: 750px;
+    display: flex;
+    height: 260px;
+}
+#mobileleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#one {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 24px;
+}
+#two {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#app {
+    height: 68px;
+    margin-right: 20px;
+    width: 68px;
+}
+#appLogo a {
+    text-decoration: none;
+}
+#appStore {
+    height: 40px;
+    width: 144px;
+}
+#googleStore {
+    height: 40px;
+    width: 144px;
+}
+#mobileRight img {
+    height: 260px;
+    width: 300px;
+}
+#info {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 0px 20px 10px;
+    display: block;
+}
+#infonav {
+    margin: auto;
+    width: 1020px;
+    display: flex;
+}
+.infoList {
+    width: auto;
+    padding: 18px;
+    display: inline-block;
+}
+.infoList p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.footerList {
+    list-style: none;
+}
+.footerItem {
+    line-height: 1.4em;
+    margin: 16px 0px 0px;
+}
+.footerLink {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.footerLink:hover {
+    text-decoration: underline;
+}
+.smallLogo {
+    text-decoration: none;
+}
+.svgSmallLogo {
+    display: inline-block;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    width: 30px;
+    margin-right: 20px;
+    color: white;
+}
+#faceBook {
+    width: 26px;
+}
+#kiyaku2 {
+    width: 42%;
+    position: relative;
+    top: 20px
+}
+#floatButton {
+    position: fixed;
+    width: 160px;
+    height: 160px;
+    bottom: 32px;
+    right: 32px;
+    font-size: 22px;
+    text-align: center;
+    z-index: 2;
+    background-color: rgb(234, 53, 45);
+    border-radius: 50%;
+}
+#floatContent {
+    width: 160px;
+    height: 160px;
+    padding-top: 25px;
+}
+#svgFloatButton {
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 54px;
+    margin-top: 8px;
+}
+#floatContent a {
+    text-decoration: none;
+    color: white;
+}
