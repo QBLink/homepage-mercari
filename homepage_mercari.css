@@ -61,6 +61,7 @@ body {
     width: 100%;
     position: relative;
     font-family: inherit;
+    outline: none;
 }
 
 #searchBtn {
@@ -389,8 +390,7 @@ body {
 }
 
 .itemBox:hover {
-    height: 250.4px;
-    border: 1px solid #0095ee;
+    outline: 1px solid aqua;
 }
 
 .itemPictureLink {
@@ -416,7 +416,7 @@ body {
 }
 
 .caption {
-    height: 64px;
+    height: 36px;
     padding: 14px;
     font-size: 14px;
     text-decoration: none;
@@ -445,71 +445,83 @@ body {
     display: inline-flex;
 }
 
-
-}
 #popularBrand {
     padding: 56px 0px 30px;
 }
+
 #brandTitle p {
     text-align: center;
     margin-bottom: 16px;
     font-size: 28px;
     font-weight: 600;
 }
+
 #brandTag {
     text-align: center;
 }
+
 #itemByBrand {
     box-sizing: border-box;
     background-color: rgb(245, 245, 245);
     padding-bottom: 100px;
 }
+
 #mobileApp {
     background: url("https://web-jp-assets.mercdn.net/_next/static/images/download_app_bg-b57d6f1a32f2aebd89cf6f43bc2e4b39.jpg")repeat scroll center center / cover;
     display: block;
     height: 260px;
 }
+
 #mobile {
     margin: auto;
     width: 750px;
     display: flex;
     height: 260px;
 }
+
 #mobileleft {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 #one {
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 24px;
 }
+
 #two {
     color: rgb(255, 255, 255);
     font-size: 35px;
     margin-bottom: 10px;
 }
+
 #app {
     height: 68px;
     margin-right: 20px;
     width: 68px;
 }
+
 #appLogo a {
     text-decoration: none;
 }
+
 #appStore {
     height: 40px;
     width: 144px;
 }
+
 #googleStore {
     height: 40px;
     width: 144px;
 }
+
 #mobileRight img {
     height: 260px;
     width: 300px;
 }
+
 #info {
     background-color: black;
     color: rgb(255, 255, 255);
@@ -517,40 +529,49 @@ body {
     padding: 0px 20px 10px;
     display: block;
 }
+
 #infonav {
     margin: auto;
     width: 1020px;
     display: flex;
 }
+
 .infoList {
     width: auto;
     padding: 18px;
     display: inline-block;
 }
+
 .infoList p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
 }
+
 .footerList {
     list-style: none;
 }
+
 .footerItem {
     line-height: 1.4em;
     margin: 16px 0px 0px;
 }
+
 .footerLink {
     color: white;
     text-decoration: none;
     opacity: 0.7;
     cursor: pointer;
 }
+
 .footerLink:hover {
     text-decoration: underline;
 }
+
 .smallLogo {
     text-decoration: none;
 }
+
 .svgSmallLogo {
     display: inline-block;
     margin-top: 30px;
@@ -561,14 +582,17 @@ body {
     margin-right: 20px;
     color: white;
 }
+
 #faceBook {
     width: 26px;
 }
+
 #kiyaku2 {
     width: 42%;
     position: relative;
     top: 20px
 }
+
 #floatButton {
     position: fixed;
     width: 160px;
@@ -581,17 +605,20 @@ body {
     background-color: rgb(234, 53, 45);
     border-radius: 50%;
 }
+
 #floatContent {
     width: 160px;
     height: 160px;
     padding-top: 25px;
 }
+
 #svgFloatButton {
     color: rgb(255, 255, 255);
     width: 60px;
     height: 54px;
     margin-top: 8px;
 }
+
 #floatContent a {
     text-decoration: none;
     color: white;
